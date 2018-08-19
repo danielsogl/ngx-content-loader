@@ -113,4 +113,4 @@ This is basically an Angular port for [react-content-loader](https://github.com/
 
 ## License
 
-MIT &copy; [NetanelBasal](https://github.com/NetanelBasal)
+MIT &copy; [danielsogl](https://github.com/danielsogl)
