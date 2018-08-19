@@ -12,25 +12,36 @@ content that will be loaded, similar to Facebook cards loaders.
 
 This is an Angular port for [react-content-loader](https://github.com/danilowoz/react-content-loader).
 
-* :gear: **Complety customizable:** you can change the colors, speed and sizes;
+* :gear: **Completely customizable:** you can change the colors, speed and sizes;
 * :pencil2: **Create your own loading:** use the
   [create-react-content-loader](https://danilowoz.github.io/create-react-content-loader/) to create
-  your customs loadings easily;
+  your custom loadings easily;
 * :ok_hand: **You can use right now:** there are a lot of presets to use the loader, see the
   [options](#examples);
-* :rocket: **Perfomance:** uses pure SVG to work, so it's works without any extra scripts,
+* :rocket: **Performance:** uses pure SVG to work, so it works without any extra scripts,
   canvas, etc;
 
 ## Install
 
+### Yarn
 ```bash
-yarn add @netbasal/ngx-content-loader
+yarn add @netbasal/content-loader
+```
+
+### Npm
+```bash
+npm install @netbasal/content-loader
+```
+
+### Angular 6
+```bash
+npm install @netbasal/content-loader@next
 ```
 
 ## Usage
 
 ```ts
-import { ContentLoaderModule } from '@netbasal/ngx-content-loader';
+import { ContentLoaderModule } from '@netbasal/content-loader';
 
 @NgModule({
   imports: [
@@ -85,12 +96,15 @@ export class AppModule { }
 
 |Input|Type|Default|Description|
 |---|---|---|---|
+|animate|boolean|`true`|`false` to render with no animation|
 |width|number|`400`||
 |height|number|`130`||
 |speed|number|`2`||
 |preserveAspectRatio|string|`'xMidYMid meet'`||
 |primaryColor|string|`'#f9f9f9'`||
 |secondaryColor|string|`'#ecebeb'`||
+|primaryOpacity|number|`1`||
+|secondaryOpacity|number|`1`||
 |uniqueKey|string|`randomId()`|Unique ID, you need to make it consistent for SSR|
 
 ## Credits
